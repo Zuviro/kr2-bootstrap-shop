@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гирлянда "Листопад" — Pumpkin</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body id="top">
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Pumpkin</a>
+      <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link active" href="product.html">Товар</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+        <li class="breadcrumb-item active">Гирлянда "Листопад"</li>
+      </ol>
+    </nav>
+
+    <div class="row g-4 mb-5">
+      <div class="col-12 col-lg-6">
+        <img src="images/Listopad.jpg" class="img-fluid rounded border" style="border-color: var(--bs-border-color) !important;" alt="Листопад">
+      </div>
+      <div class="col-12 col-lg-6">
+        <span class="badge bg-danger mb-2">Скидка</span>
+        <h1 class="mb-3">Гирлянда "Листопад"</h1>
+        <p class="lead">Атмосферная осенняя гирлянда на батарейках</p>
+        <p class="display-6 text-danger mb-4">250 ₽</p>
+        <a class="btn btn-primary btn-lg mb-4" href="order.html">Оставить заявку</a>
+
+        <div class="alert alert-warning" role="alert" style="background-color: var(--bs-secondary-bg); color: var(--bs-body-color); border-color: var(--bs-border-color);">
+          <strong>Внимание:</strong> Для работы требуются батарейки типа АА (не входят в комплект).
+        </div>
+      </div>
+    </div>
+
+    <section class="mb-5">
+      <ul class="nav nav-tabs" id="productTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab">Описание</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs" type="button" role="tab">Характеристики</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">Отзывы</button>
+        </li>
+      </ul>
+      <div class="tab-content border border-top-0 p-4 rounded-bottom" id="productTabContent" style="border-color: var(--bs-border-color) !important;">
+        
+        <div class="tab-pane fade show active" id="desc" role="tabpanel">
+          <p>Атмосферная осенняя гирлянда на батарейках. Отлично подойдет для украшения интерьера, создания уютной атмосферы в доме или декора фотосессии.</p>
+        </div>
+
+        <div class="tab-pane fade" id="specs" role="tabpanel">
+          <table class="table table-bordered mb-0">
+            <tbody>
+              <tr><th>Категория</th><td>Гирлянды</td></tr>
+              <tr><th>Материал</th><td>Медь, пластик</td></tr>
+              <tr><th>Мощность</th><td>10 Вт</td></tr>
+              <tr><th>Тип батареек</th><td>АА</td></tr>
+              <tr><th>Наличие</th><td>В наличии</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tab-pane fade" id="reviews" role="tabpanel">
+          <div class="mb-3 border-bottom pb-2" style="border-color: var(--bs-border-color) !important;">
+            <strong>Анна</strong> <span class="text-warning">★★★★★</span>
+            <p class="mb-0 small">Очень красивая! Свет теплый, уютный.</p>
+          </div>
+          <div>
+            <strong>Дмитрий</strong> <span class="text-warning">★★★★☆</span>
+            <p class="mb-0 small">Хорошая гирлянда, но батарейки быстро садятся.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- АККОРДЕОН FAQ -->
+    <section>
+      <h2 class="h4 mb-3">Доставка и оплата</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Сколько идёт доставка?
+            </button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              По Москве — 1–2 дня, по России — от 3 до 7 рабочих дней.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Можно ли оплатить при получении?
+            </button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Да, доступна оплата при получении, а также онлайн-оплата.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer text-center">
+    <div class="container">
+      <p class="mb-0">Учебный проект Pumpkin · <a href="contacts.html">Контакты</a></p>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
